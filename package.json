@@ -11,7 +11,7 @@
     "build"
   ],
   "scripts": {
-    "build": "tsc && tsc src/sse.ts && node -e \"require('fs').chmodSync('build/index.js', '755')\" ",
+    "build": "tsc && node -e \"require('fs').chmodSync('build/index.js', '755')\" ",
     "prepare": "npm run build",
     "watch": "tsc --watch",
     "inspector": "npx @modelcontextprotocol/inspector tsx ../src/index.ts"
